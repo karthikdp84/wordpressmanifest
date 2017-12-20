@@ -4,8 +4,8 @@ exec { "setrootpassword" :
 		       command => "mysqladmin -u root password abcd1234 && touch /tmp/file1",
                        path => "/usr/bin",
                        creates => "/tmp/file1",
-		       require => Service['mysql']
-		       before => Exec['runmysqlcommand']
+		       require => Service['mysql'],
+		       before => Exec['runmysqlcommand'],
 }
 
 exec { "downloadmysqlcommand" :

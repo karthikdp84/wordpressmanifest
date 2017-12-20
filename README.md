@@ -1,1 +1,2 @@
 # wordpressmanifest
+# wordpressmodule
